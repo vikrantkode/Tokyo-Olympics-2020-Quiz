@@ -1,16 +1,19 @@
 var readlineSync = require("readline-sync")
 
 //entry point to quiz
-var userName = readlineSync.question("What is your name...? ");
-//console.log("-------------------------------------------------")
-console.log("Welcome " + userName + " Let's play Olympic Quiz 2020");
-console.log("=================================================")
+function welcome(){
+  var userName = readlineSync.question("What is your name...? ");
+  //console.log("-------------------------------------------------")
+  console.log("Welcome " + userName + " Let's play Olympic Quiz 2020");
+  console.log("=================================================")
+}
 
 var score = 0 ;
+
 function quiz(question,answer){
   var userAnswer = readlineSync.question(question);
 
-  if(userAnswer === answer){
+  if(userAnswer.toUpperCase() === answer.toUpperCase()){
     console.log("Wohoo...It's correct")
     score = score + 1;
       }else{
@@ -53,8 +56,14 @@ var questions = [
 }
 ];
 
-for(var i=0;i<questions.length;i++){
- var currentQuestion = questions[i];
- quiz(currentQuestion.question,                    currentQuestion.answer )
+function game(){
+  for(var i=0;i<questions.length;i++){
+  var currentQuestion = questions[i];
+  quiz(currentQuestion.question,                    currentQuestion.answer )
+  }
 }
+
+welcome();
+game();
+
 console.log("You Scored total : " + score + " : points")
