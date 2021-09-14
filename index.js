@@ -28,27 +28,27 @@ function quiz(question,answer){
 //objects in loop
 var questions = [
 {
- question: "Q1 : Whether it is Tokyo Olympic 2020/2021 ? ",
+ question: "Q1 : Whether it is Tokyo Olympic 2020/2021 ?\n ",
  answer  : "2020"
 },
 {
- question: "Q2 : Who won most medals in Tokyo Olympics 2020 ? ",
+ question: "Q2 : Who won most medals in Tokyo Olympics 2020 ? (USA / China)\n ",
  answer  : "USA"
 },
 {
- question: "Q3 : How many medals India won in Tokyo Olympics 2020 ? ",
+ question: "Q3 : How many medals India won in Tokyo Olympics 2020 ?(16 / 7)\n ",
  answer  :"7"
 },
 {
- question: "Q4 : Who won Gold Medal for India in Tokyo Olympics 2020 ? ",
+ question: "Q4 : Who won Gold Medal for India in Tokyo Olympics 2020 ?\n(Neeraj Chopra / Mirabai Chanu)\n ",
  answer  : "Neeraj Chopra"
 },
 {
- question: "Q5 : Who carried Indian Flag at opening ceremony of Tokyo Olympic 2020 ? ",
+ question: "Q5 : Who carried Indian Flag at opening ceremony of Tokyo Olympic 2020 ?\n(Manpreet Singh / Bajrang Poonia)\n",
  answer  : "Manpreet Singh"
 },
 {
- question: "Q6 : Who carried Indian Flag at closing ceremony of Tokyo Olympic 2020 ? ",
+ question: "Q6 : Who carried Indian Flag at closing ceremony of Tokyo Olympic 2020 ?\n(Bajrang Poonia / P.V. Sindhu)\n ",
  answer  : "Bajrang Poonia"
 }
 ];
